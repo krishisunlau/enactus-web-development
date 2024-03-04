@@ -1,0 +1,5 @@
+.page{
+    background: linear-gradient(to bottom, #7face7,#c3cee2, #d5d1ce);
+    height: 100vh;
+    display:flex;    
+}

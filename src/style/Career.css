@@ -1,0 +1,51 @@
+  .career-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #7face7,#c3cee2, #d5d1ce);
+    height:100vh;
+  }
+  
+  .tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+  }
+  
+  .tab {
+  cursor: pointer;
+  height: 60px; 
+  width: 350px; 
+  border-radius: 8px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family:Verdana;
+  font-weight: lighter;
+  color:#b94207 ;
+  font-size: 18px; 
+  margin-left: 80px;
+  }
+
+  
+  .tab:hover,
+  .active {
+    background-color: #1d68d22b;
+  }
+  
+  .content-container {
+    margin-top: 40px;
+
+  }
+  
+
+.careerhelp h2,
+.interview h2,
+.resume h2 {
+  color: #806a6f; 
+  font-size: 18px; 
+  font-family:'Gill Sans'; 
+  margin-left: 160px;
+}
+
+
