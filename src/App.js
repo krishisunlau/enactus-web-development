@@ -12,9 +12,10 @@ import Resources from './pages/Resources';
 import './style/Resources.css';
 import Jobs from './pages/Jobs';
 import './style/Jobs.css';
-import Profile from './pages/SignIn';
+import SignIn from './pages/SignIn';
 import './style/SignIn.css';
-
+import SignUp from './pages/SignUp';
+import './style/SignUp.css';
 
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,7 +34,8 @@ const App = () => {
           <Route path="/career-help" element={<Career />} /> 
           <Route path="/resources" element={<Resources />} /> 
           <Route path="/jobs" element={<Jobs />} /> 
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
 
         </Routes>
       </div>

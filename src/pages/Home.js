@@ -21,7 +21,7 @@ const Home = () => {
         <h1>About Us</h1>
       
         <div className="about-info-box">
-          <h2></h2>
+          <h2>--</h2>
               <p></p></div>
         <Link to="info" smooth={true} duration={1000}>
           <div className="arrow">&#9660;</div>

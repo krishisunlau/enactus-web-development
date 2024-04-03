@@ -31,7 +31,7 @@ const Hamburger = ({ onToggleMenu }) => {
             <Link to="/resources"><h2>Other Resources</h2></Link>
           </div>
           <div className="menu-option" onClick={toggleMenu}>
-            <Link to="/profile"><h2>Profile</h2></Link>
+            <Link to="/signin"><h2>Profile</h2></Link>
           </div>
         </div>
       )}

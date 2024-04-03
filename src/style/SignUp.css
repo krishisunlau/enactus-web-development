@@ -1,0 +1,109 @@
+
+.signup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #7face7,#c3cee2, #d5d1ce);
+    z-index: 9999;
+    animation: expand 0.5s ease-in-out forwards;
+  }
+  
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards 0.3s;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width:600px;
+    height: 400px;
+  }
+  
+  .input-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    width: calc(100% - 20px); 
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d5d1ce92; 
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-field:last-child {
+    margin-bottom: 20px; 
+  }
+  
+  button[type="submit"] {
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #a5bdd9;
+    color: #446387;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #717a83;
+  }
+
+  @keyframes expand {
+    from {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #d5d1ce, #eebe9a, #e79879);
+      transform: translate(calc(100vw - 100px - 20px), calc(100vh - 100px - 20px)); 
+    }
+    to {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      background: linear-gradient(to bottom, #d5d1ce, #eebe9a, #e79879);
+      transform: translate(0, 0); 
+    }
+    
+  }
+  
+  /*@keyframes expand {
+    from {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      background: linear-gradient(to bottom, #d5d1ce, #eebe9a, #e79879);
+      transform: translate(0, 0); /* Final position 
+      
+    }
+    to {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #d5d1ce, #eebe9a, #e79879);
+      transform: translate(0, 0); 
+    }
+  } */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
